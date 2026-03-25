@@ -1,0 +1,17 @@
+[project]
+name = "pyperclip"
+version = "0.1.0"
+description = "fork to asweigart/pyperclip"
+authors = [
+    { name = "k3-cat", email = "k3-cat@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pyobjc>=12.1 ; sys_platform == 'darwin'",
+]
+
+[tool.uv]
+package = true
+
+[tool.uv.build-backend]
+module-root = "src"
